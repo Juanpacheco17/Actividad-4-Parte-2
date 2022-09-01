@@ -1,0 +1,107 @@
+main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "logo header  header  header login  "
+    "aside  section section section section "
+    "footer footer  footer  footer pie-img  ";
+    row-gap: 0;
+    column-gap: 0;
+    grid-template-rows: 20% 70% 10%;
+    height: 98vh;
+}
+
+header {
+    grid-area: header;
+    border: 1px solid black;
+    text-align: center;
+
+}
+.logo{
+    grid-area: logo;
+    border: 1px solid black;
+    text-align: center;
+}
+.login{
+    grid-area: login;
+    border: 1px solid black;
+    text-align: center;
+}
+aside {
+    grid-area: aside;
+    border: 1px solid black;
+}
+
+section {
+    grid-area: section;
+    border: 1px solid black;
+}
+
+footer {
+    grid-area: footer;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+}
+
+.pie-foto {
+    grid-area: pie-img;
+    border: 1px solid black;
+    text-align: center;
+   
+}
+
+section .contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    column-gap: 25px;  
+    row-gap: 35px;
+    height: 448px;
+  }
+
+  .contenedor a{
+    border: 1px solid black;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    
+   }
+
+   .pie-foto img{
+    margin-top: 15px;
+   }
+
+   h1 {
+    margin-top: 40px;
+   }
+
+   .contenedor a h3 {
+    margin-top: 70px;
+
+   }
+
+   a{
+    color : black ;
+    text-decoration:none ;
+   }
+
+   .navegacion ul{
+    list-style: none;
+      
+   }
+
+   .navegacion ul li{
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-right: 30px;
+    text-align: center;
+   }
+  
+   .logo img{
+    margin-top: 20px;
+    height: 80px;
+    
+   }
